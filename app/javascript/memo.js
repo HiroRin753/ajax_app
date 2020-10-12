@@ -14,6 +14,7 @@ function memo() {
       const item = XHR.response.post;
       const list = document.getElementById("list");
       const formText = document.getElementById("content");
+      const HTML = `
         <div class="post" data-id=${item.id}>
           <div class="post-date">
             投稿日時：${item.created_at}
@@ -27,5 +28,5 @@ function memo() {
     };
     e.preventDefault();
   });
-}
-window.addEventListener("load", memo);
+ }
+ window.addEventListener("load", memo);
